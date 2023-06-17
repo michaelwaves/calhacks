@@ -1,0 +1,166 @@
+TITLE: Client "B", Session February 11, 2013: Client feels picked on at work. Any criticism of her work creates a feeling of self-loathing.
+DESCRIPTION: Client feels picked on at work. Any criticism of her work creates a feeling of self-loathing.
+CLIENT: You know the bus stop right in front of the post office?
+THERAPIST: Yeah.
+CLIENT: Yeah, so there were like fifty people waiting for a bus.
+THERAPIST: Yeah.
+CLIENT: And there was like (inaudible at 00:00:19) shoveled in the sidewalk.
+THERAPIST: Yeah.
+CLIENT: And so if you try to walk on the sidewalk, they yell at you for cutting in line. (LAUGHTER) (SIGH) (PAUSE) I really should get here early though, so can I catch my breath before. (LAUGHTER) Sorry.
+THERAPIST: For what?
+CLIENT: Oh, for being late and running up the stairs and now being too out of breath to actually talk. [00:59]
+THERAPIST: This is a "come as you are sort" of whatever.
+CLIENT: (LAUGHTER) I've been feeling really bad about work. So I worked from home on Friday, obviously. And I got nothing done. I spent most of the day just browsing. I think I even only tried to do work for about two hours.
+THERAPIST: Uh huh.
+CLIENT: It was kind of ridiculous. I knew what I was blocking on. I just couldn't get myself to do it. Two and a half weeks ago I set up five experiments to see if I could improve the power situation in my design.
+THERAPIST: Okay.
+CLIENT: And these stones are supposed to take four to five days to run.
+THERAPIST: Like each experiment?
+CLIENT: Yeah. Well, I was (inaudible)
+THERAPIST: (inaudible at 00:01:55)
+CLIENT: Altogether, yeah.
+THERAPIST: Yeah.
+CLIENT: But I kept running issues and problems and having to restart. So it took two and a half weeks instead of five days. [00:02:01]
+THERAPIST: Right.
+CLIENT: Just kind of a pain.
+THERAPIST: Yes it is.
+CLIENT: And also on the last project we worked on, the stones took like twenty hours, not five days. So that's also a pain. (SIGH) But I needed to harvest data because we finally finished. Which was just a matter of, you know, running a couple command line scripts and then doing a couple of search commands ","P1-N4003B1":"on text files. That's it which was not beyond my skill level. (LAUGHTER)
+THERAPIST: I see.
+CLIENT: But I was afraid that I wouldn't get good data so I kept putting off doing it.
+THERAPIST: Yeah.
+CLIENT: And I ended putting off doing all other work until I collected my power data because it's such a simple thing. I should do that first and get it out of the way. So I got nothing done. (SIGH)
+THERAPIST: Right.
+CLIENT: So I told myself I was going to do work on Sunday because we decided we weren't going to go to church in the ice and snow and terribleness. I usually meet with my personal trainer on Sundays but he called and canceled and said, you know, there was no parking at all in his neighborhood. So...
+THERAPIST: Mm hmm. [00:04:00]
+CLIENT: So here I had the whole day and I found that... That's the same thing I did Saturday until five PM when I sat down and asked Dave to help me. And I discovered that all of my data was bad not because my hypothesis failed but because I had set a parameter wrong. And if I had looked at preliminary ","P1-N4004F1":"results a week and a half ago when I had them instead of waiting for the full set of analysis to complete, I would have known a week and a half ago (inaudible at 00:04:39) you know, a good set of parameters. So I felt really, really stupid. (PAUSE) (SIGH) At the end of the day, I submitted the report ","P1-N4004F2":"to my manager, he wanted to review it before I submitted it to the tiny (ph). The tiny team wants the status reports every Monday by the end of the day. [00:05:01]
+CLIENT: So I e-mailed my reports around eleven and he replied with a bunch of criticism saying, you know, "As we discussed last week, do X, Y, and Z." Well, I thought I had done X, Y, and Z because we discussed this last week in fact. And I did include more detail this week than I did last week. But... ","P1-N400511":"So I redid it. I couldn't get in contact with one of the people who was supposed to send me information for me to include in this report. I e-mailed him four times since Thursday afternoon and he hasn't responded. He was working from home today and I called and I got his voice-mail. So I sent the (inaudible) ","P1-N400512":"report to him without the extra information from him and said, "I wasn't able to get in touch with him. Here's what I have." He was like, "In the future, I want you to call instead of e-mailing him." [00:05:59]
+THERAPIST: Sure.
+CLIENT: I don't know if that's fair. I mean, he's my manager. It's his job to correct my work and ask me for what he needs as a manager. And it's not like he called me names or called me stupid or was rude or anything. And he used please and thank you in all of his e-mails. But I don't know. I don't ","P1-N400571":"like getting things wrong. And being corrected is an indication that I got something wrong.
+THERAPIST: Right. And what sounds especially maddening about this that you actually didn't. I mean, he wanted you to call and you called. [00:07:01]
+CLIENT: He wants me to not e-mail at all and to call.
+THERAPIST: Right. Right.
+CLIENT: Call on Thursday when I sent my first reminder e-mail.
+THERAPIST: Right.
+CLIENT: Instead of waiting until the day it's due to call and say, "Give me this data." He should've gotten it to me last week.
+THERAPIST: Right.
+CLIENT: And I'm just constantly worried at work that people are only noticing my screw ups and think poorly of me and think I'm a bad engineer. (PAUSE) And I mean there is a performance problem. Right? It's not like there's no problem with my performance at all.
+THERAPIST: I imagine you're terrified of (PAUSE) kind of being in the quicksand again.
+CLIENT: Mm hmm.
+THERAPIST: That you're worried you're in one of those kind of tailspins that have happened before where...
+CLIENT: I feel like I'm already in one of those tailspins. (PAUSE) And I kept a notepad by my desk everyday and I marked it every time I wanted to go look at Facebook or Twitter or blogs or something and I didn't. My count was something like twenty seven or twenty eight by the time I left. And today ","P1-N400731":"was a short day because I left early.
+THERAPIST: Mm hmm.
+CLIENT: The count of times I failed if I had kept track and actually looked at Facebook or Twitter was around four. Which is better than usual I think because I was counting and observing. But that's still a lot.
+THERAPIST: Sure. What got you counting and observing today?
+CLIENT: I remember a conversation I had with a friend at a party last summer where he was talking about research he was doing on reward and dopamine, et cetera. He had been talking to scientists. And he said something about how, you know, for himself when he needs to do work and he's blocking he goes ","P1-N4007D1":"to check Facebook and Twitter, you know, counting the number of times helps. [00:10:00]
+THERAPIST: Yep. Yeah. I see. Good strategy.
+CLIENT: Yeah. I don't know what made me remember that but...
+THERAPIST: Yeah. Yeah sometimes I have (inaudible at 00:10:15) kind of have people like, like, you know, take an M&M or a raisin or something every time they catch themselves like getting distracted. It's not exactly the same thing you're talking about but it's similar.
+CLIENT: I would just eat the whole bowl of M&Ms in one go (inaudible at 00:10:39)
+THERAPIST: Yeah (inaudible) getting distracted and not knowing about it (inaudible)
+CLIENT: Right.
+THERAPIST: (inaudible)
+CLIENT: Yep.
+THERAPIST: Um...
+CLIENT: You know, I'm scared and worried and anxious all the time, even when I'm at home.
+THERAPIST: Yeah. (PAUSE) Um...
+CLIENT: Right.
+THERAPIST: Maybe it's two hours. Maybe it's three. I don't know.
+CLIENT: Sure.
+THERAPIST: But I would imagine like putting some structure so as not to get it hanging over your head all the time.
+CLIENT: Right.
+THERAPIST: Might be helpful. You know?
+THERAPIST: (inaudible at 00:13:07) issue (inaudible) in my mind is that you get in these vicious cycles where you're terrified of basically beating the shit out of yourself (inaudible) you know?
+CLIENT: Yeah.
+THERAPIST: Both because you're angry at yourself and, you're right, it does cause problems in the world.
+CLIENT: Yeah.
+THERAPIST: So (PAUSE) this is the problem at this point. I'm sort of not sure yet what to say about it.
+CLIENT: Right.
+THERAPIST: Okay. I think you're probably feeling quite helpless about it and probably (inaudible at 00:14:17) something about this.
+CLIENT: Yep.
+THERAPIST: However, I think some of those impulses are also sort of directed towards, and here's a surprising line coming from a psychologist, avoiding how you feel. (PAUSE) Truly how scared and how angry with yourself. [00:15:03]
+CLIENT: But I know I'm scared and angry at myself.
+THERAPIST: Tell me about it.
+CLIENT: Like what words are there to say? I'm scared and angry. You know, it's unpleasant. I want it to stop.
+THERAPIST: I see. It doesn't seem like there's anything more to say?
+CLIENT: Nope.
+THERAPIST: Well. I mean, I guess a few things strike me about that. One of which is, if you're having a good time, I bet it wouldn't be so hard to find things to say about it. You know, like, "Well, I went to the party the other night and it was fun. I didn't really know what else to..." You know, it's ","P1-N400CD1":"be like, "I talked to this person and that was awesome! And these other people showed up! And the music, it was so cool. And the food! I haven't even started telling you about the food! I ate this, that, and the other..." You know what I mean? Like...
+CLIENT: Yeah.
+THERAPIST: Obviously (inaudible) here. But...
+CLIENT: Right. [00:17:00]
+THERAPIST: What I'm saying, also obvious, is I imagine there are things making it difficult to say more about being so scared and so angry at yourself. Such as (PAUSE) you feel uncomfortable. Like something about (PAUSE) I don't know if it's just you focus on the feelings themselves or something I'm ","P1-N400D71":"talking you through?
+CLIENT: I don't know. I talk more about how I feel than anything else. [00:18:01]
+THERAPIST: Mm hmm. (PAUSE) Do you feel a bit shut down at all? Or do you just feel like I'm kind of asking the wrong questions?
+CLIENT: I don't know. I don't think I'm shutdown.
+THERAPIST: I'm not convinced that you are. I'm trying to figure this out.
+CLIENT: I mean, I guess maybe I'm worried about sounding like the broken record since this is the third session in a row where I've come in and said, "You know, I'm having trouble focusing at work and it's making me really anxious and I don't know what to do." (PAUSE) Third or fourth? I don't know. ","P1-N400E51":"I've lost count. [00:19:03]
+CLIENT: Like I'm tired of being a fuck up and I'm tired of thinking about being a fuck up and I'm tired of avoiding of thinking I'm a fuck up and I'm tired of trying to distract myself when I'm not at work so that I'm not thinking about work when, you know, the day is over and I've earned a break. And ","P1-N400E91":"I'm tired of coming home and feeling like I haven't earned a break from thinking about work. (PAUSE) I avoided opening Facebook or Twitter twenty eight times today but I still feel like I didn't get enough work done so still be thinking about work or at least punishing myself for not doing enough work at work.
+THERAPIST: Okay. Well no wonder you don't want to talk about it. It's relentless.
+CLIENT: Right.
+THERAPIST: And what you want is a break.
+CLIENT: Yep.
+THERAPIST: And you can't get one.
+CLIENT: Because I haven't earned it.
+THERAPIST: So, I gather that's, something else you're feeling is quite frustrated and pissed off that you won't let yourself have a break and (PAUSE) I don't have the impression that you're feeling angry with me but I think when I said, "Well, hey, that's hard to talk about. What's up with that?" You ","P1-N400F91":"know, you were kind of frustrated like, "Aah! Of course I don't want to talk about it." I mean (LAUGHTER) you know, like that there was some of the frustration there because you've trying to get away from it. [00:22:15]
+CLIENT: I think my point in saying all that was not to explain why I wasn't talking about it. I think it was responding to your request to talk about it by talking about it.
+THERAPIST: Right. It seems to me it does both, at least, I can't imagine with what you said about it that you'd possibly want to talk about it.
+CLIENT: Right.
+THERAPIST: I mean, that seems quite reasonable to me that you wouldn't want to fucking talk about it. You don't want to talk about it. You don't want to think about it. You don't want to go near it. It's been relentless. It's been plaguing you all the time.
+CLIENT: Yep.
+THERAPIST: It doesn't matter what you do. You're kind of under it's thumb.
+CLIENT: Yep.
+CLIENT: I haven't felt this way the entire time I've been at this job.
+THERAPIST: Right.
+CLIENT: I know there were weeks were, you know, I was productive at work and got shit done and like clocked out at the end of the day and actually mentally clocked out too. But...
+THERAPIST: Yep.
+CLIENT: I don't know. That hasn't been since November, I think. Like...
+THERAPIST: Hmm.
+CLIENT: Maybe December. I'm not sure. It's been a while of just feeling like I've gotten nothing done. And I've got nothing to show for myself (inaudible at 00:23:35) which means that I should put in more hours to make up for the hours that I screwed around and got nothing done. Except I'm now at the ","P1-N401171":"point where there's... Like I could literally work 24\/7 without a break and I still wouldn't be able to make up all of the hours I missed. It would take weeks.
+THERAPIST: Uh huh.
+CLIENT: And I don't have it in me to do that kind of marathon work.
+THERAPIST: Right.
+CLIENT: I'm almost in debt to my job.
+THERAPIST: That's how it sounds. That's exactly how it sounds.
+CLIENT: Yeah. Yesterday after I had been working a couple of hours, Dave came in and asked if I wanted any food. And I said, "I don't have time to cook and he said, "That's okay. We can order Chinese." I'm like... It sounds so crazy in retrospect but I really meant it at the time. I told him I don't ","P1-N401271":"get to eat because, you know, I screwed around at work and did provide them with the value of what they were paying me which means I didn't actually deserve my paycheck which you can't buy food without money legitimately, I shouldn't be allowed to use it and therefore no food for me until I was productive ","P1-N401272":"at work. Which is crazy, right? [00:25:11]
+THERAPIST: Yeah, it is. It's also terribly cruel.
+CLIENT: And Dave swears (inaudible at 00:25:29)
+THERAPIST: He's going the high brow then? Yeah. That's alright.
+THERAPIST: Did you have like a brief moment of feeling sad? [00:27:03]
+CLIENT: When? Now or last night?
+THERAPIST: Now.
+CLIENT: I don't think sad is the right word. Maybe more (PAUSE) despairing of ever being the same.
+THERAPIST: Oh. (PAUSE) Yeah, I completely read that wrong. So you weren't feeling upset about what you felt or what you were doing to yourself. You felt more like (PAUSE) this is another way you'll always be a fuck up? [00:28:01]
+CLIENT: Yep.
+THERAPIST: And that hurts.
+CLIENT: Yep.
+THERAPIST: You'll never be good enough? Like minimally competent?
+CLIENT: I think it's more the (PAUSE) the sense of wasted potential.
+THERAPIST: How so?
+CLIENT: How much could I get done? Like how great could I be if I weren't so fucking crazy?
+THERAPIST: And?
+CLIENT: There are no MIT grads in my group, like not my mini group, the bigger group of seventy something people, because they're all doing research, like cutting edge research, extending the boundaries of what technology can do or starting companies or... I don't know. Not sitting in a corporate job ","P1-N401571":"pushing the button on autosynthesis replacement ditigologic design. Right? Like that's, that's not what smart people do. Like my job is basically a technician's job. I mean, sure it requires a minimum of intelligence and training. But...
+CLIENT: You don't need a high level degree to do it. (PAUSE) But it's what I'm stuck with because I'm too crazy to succeed at anything else.
+THERAPIST: And like crazy how?
+CLIENT: Hmm?
+THERAPIST: Crazy how?
+CLIENT: (SIGH) (PAUSE) Oh, crazy is a short hand for being too depressed to get my act together and actually get shit done.
+THERAPIST: I see. So... (PAUSE) By depressed, I assume you mean angry with yourself, miserable, anxious.
+CLIENT: On a (inaudible) put things off, avoidance (PAUSE) (inaudible) bundle. [00:34:01]
+THERAPIST: Mm hmm. Which is you struggle with constantly, sometimes more, sometimes less.
+CLIENT: Yep.
+THERAPIST: But (inaudible)
+CLIENT: And for outsiders looking in at my output, it's really hard to tell the difference between depressed and miserable and just plain lazy.
+THERAPIST: Yeah, that's probably true.
+THERAPIST: In a sense you have that to contend with as well.
+CLIENT: Yeah.
+THERAPIST: So you I imagine pretty consistently have to sort of imagine or even be confronted with (PAUSE) people judging you that way, as being lazy? [00:36:09]
+CLIENT: Yep.
+THERAPIST: Knowing it's not really what's going on.
+CLIENT: Mm hmm.
+THERAPIST: I think you were crying because you felt sad and ashamed.
+CLIENT: Okay.
+THERAPIST: And (PAUSE) I'm not sure about this but I, I'm inclined to think there's a little relief in that compared to just feeling so angry.
+CLIENT: Maybe.
+THERAPIST: I often think you could use any sort of relief you can get.
+THERAPIST: We should stop for now.
+CLIENT: Oh?
+THERAPIST: (inaudible)

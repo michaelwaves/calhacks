@@ -1,0 +1,62 @@
+TITLE: Client "B", Session March 21, 2013: Client is convinced that her co-workers dislike her, and she keeps having dreams that reinforce this belief.
+DESCRIPTION: Client is convinced that her co-workers dislike her, and she keeps having dreams that reinforce this belief.
+CLIENT: I don't know where to start. There's this stupid family trip coming up, which I don't want to go on. And, I also keep having this recurring nightmare that I can hear what my co-workers are saying about me behind my back. Then I wake up believing that's what they actually saying that. It takes ","P1-N4000B1":"me like several minutes to realize no, that was dream and I'm waking up. It's really unpleasant.
+THERAPIST: Yeah. (Pause) What is it that they're saying?
+CLIENT: Oh, that I'm slow and I can't keep up. And they have to coddle me and break things down into bite sized pieces. Otherwise, I would never get anything done. It's really frustrating.
+THERAPIST: And it's a recurring nightmare?
+CLIENT: Yes. (Pause from [00:01:51] to [00:02:19])
+THERAPIST: I have some thoughts but I'm not quite sure what to say.
+CLIENT: (Laughter) I have several recurring nightmares. The one with my co-workers is just the one I had last night. There's the one, happily fading where I'm still in grad school and my thesis defense is tomorrow. And I'm not prepared and haven't done any experiments at all. I guess that's the classic ","P1-N400191":"anxiety dream that pretty much all grad students that I've ever talked to have, so. (Laughter) I'm not too worried about that one.
+THERAPIST: I'm smiling, not at the dreams, which they were horrible (Laughter) if I hadn't – Like, interpret them therapist.
+CLIENT: (Laughter)
+THERAPIST: Here they are.
+CLIENT: It's true. (Pause) So what do you want from me? Do you want me to just talk more now?
+THERAPIST: Sure, whatever. Whatever's on your mind, (Chuckle) he said prompting an immediate sigh and probably roll of the eyes from her.
+CLIENT: I don't know what's on my mind. I'd like to stop having the stupid horrible dreams. They make me feel crappy when I wake up. I don't know how to do that. I don't know if that's even a possible thing to do.
+THERAPIST: I mean, (Pause) there's good news and bad news there. It is possible.
+CLIENT: Really?
+THERAPIST: Yes. The bad news is, like the only way out is through, kind of thing. Generally if I, like dealing with, sorting out, coming to terms with, like, the thoughts and feelings that the dreams kind of embody. That that will happen.
+CLIENT: I don't know why I'm so convinced that my co-workers all think horrible things about me.
+THERAPIST: And, I could be wrong on this, but it's not too hard to tell, and I may not have it, and you may not have it either. Knowing how you can hear things. It does make me wonder, how much that was like a, ‘Boy here's how you are really screwing up.' Or, ‘Hey, something you might want ","P1-N400491":"to think about is'. [00:15:18]
+CLIENT: I also find myself doing a lot of emotional work at work that is probably because I'm a woman. Like, so there are, the way our project is broken down. My functional group is three engineers. Me and Brian and Dave, my great overlap of names, (inaudible). (Laughter) And we work for Dave.
+THERAPIST: Sure. One thing with me is my job doesn't (inaudible) but your gender.
+CLIENT: (Chuckle) Yes. So I finally kept reassuring them both a lot. Which is just completely ridiculous.
+THERAPIST: Why? I guess it's ridiculous that you are put in the situation and that you have to do that. But I'm not sure if you are saying that you're being ridiculous, that's what I meant.
+CLIENT: No, the situation is ridiculous.
+THERAPIST: Okay, okay.
+CLIENT: And also, like I don't know that it's all going to work out okay and they're going to wrap up all the tools. Because I assume they can, because they have like years and years of experience in the industry. But this is a new tool set for them. And if they're like being pissy and refusing to work ","P1-N4005D1":"on it. Brian has even started being like, outright; aggressively passive aggressive if that makes any sense.
+THERAPIST: Like (inaudible)
+CLIENT: Yeah. (Pause from [00:19:47] to [00:19:56]) And I don't feel like this is the kind of thing I can bring to my manager and say you know, "Dave this is the thing that's going on."
+THERAPIST: So, one way that I can imagine it's done this way, really to the dream. Is there's this dynamic here with them where like, somebody hands stuff off to somebody else to add stuff. Like, here's the bag of crap. And, I guess I wonder, part of problem is, that in this fantasy is then the other ","P1-N400691":"person has it. You know like, and that the dream may be partly about (Pause) You know, if they have it, what about like, I mean trying to find the right—yeah, kind of what's going on.
+CLIENT: I don't feel like I've been contributing at all at work for the last, I don't know, two months. Like, we have, we have this deadline coming up at the end of March. Where we are supposed to be, the term is timing clean. So we prompt up the number of timing prompts that we have that are failing ","P1-N400711":"whatever goal we set. In this case, you know, we have a cycle time goal.
+THERAPIST: All right, excuse me.
+CLIENT: Sure. (Pause) And so when we took over the project from Sunnyvale, Brian and I, Brian and I both work on the BP. It's one giant module. We had 50 something timing prompts. And now we're down to nine, and I didn't solve any of them.
+THERAPIST: I see.
+CLIENT: You know, I still have experiments and I've been hacking at it and trying to fix them, but nothing I've done has been successful. I mean, it's not like I've been sitting there with my thumb up my ass not doing anything. But I have been doing things that didn't help with them.
+THERAPIST: Right, you've been feeling pretty ineffective.
+CLIENT: Yeah.
+THERAPIST: Not like you haven't worked. But it hasn't mattered. That's how it feels.
+CLIENT: Yes. And so, I don't know. It feels really crappy. And Dave has been making noises about—BDPE is three big tiles. The BP of DE0 and DE1. So Brian and I are on the BP, and Dave is on DE1. This guy in the other office has the DE0. And Dave has been making noises about transferring ownership ","P1-N400811":"of that to me.
+THERAPIST: The DE0?
+CLIENT: Yeah. Just so that the whole thing is in one physical location. Also, Brian seems to be doing just fine with the BP without my help. And that's a little bit terrifying to me. Because if Brian weren't making progress on the BP there's no way we would meet our goals for the sync at the end of the month.
+THERAPIST: I guess (inaudible) I'm not yet sure how it fits together. But what you're saying now seems in a similar vein to what we were talking about. Like for now it's okay, the responsibility isn't quite on you. You're still only at nine months. And you're working with Brian. But you know, the deadlines ","P1-N4008D1":"are looming. Like this is going to get pushed back on you at some point too. Trying to think of like a, I don't know if this is right. I'm sure, probably; I think it's kind of like a capacitor, right.
+CLIENT: (Laughter) Right. (Pause from [00:28:49] to [00:29:39])
+THERAPIST: Actually. (Pause) Another way of looking at the problem. Maybe in this formulation, sort of, where the problem is, is really not with you. Like, it's sort of easy to assume that. But maybe that's not where the problem is at all. Maybe the problem is with the other person in your fantasy. ","P1-N400911":"I mean the real other people here, are screwing up. But I mean that you have this idea, that if you hand something over, or if somebody else is helping you or responsible. Eventually the shit's going to come back to you.
+CLIENT: Right.
+THERAPIST: Breaking things down, being coddled I think you said. Breaking things down in to bite sized pieces and not really to do with anything. And you immediately implicated your parents. (Laughter) That made me think about that. But, this is one thing they were really horrible at with you. Is (Pause) ","P1-N400991":"making you feel responsible in a bad way for their having to treat you like a child. Which you were.
+CLIENT: Maybe. What you just said just brought to mind two anecdotes about my parents. One was, you know my dad used to tell me and my sisters that we were so spoiled you know. Because we had food that was not spicy and whatever food we wanted. When he was growing up, when he was little, when he was ","P1-N4009F1":"four—and this is dad's story and I have no idea if it's true because dad is known to lie and exaggerate about all kinds of things. But when dad was four, he had this terrible stomach upset or colic or something. I guess four is too old for colic really, but he called it colic. [00:33:26]
+THERAPIST: Right, way too old for colic.
+CLIENT: Yeah but that's what he called it.
+THERAPIST: I, I—
+CLIENT: Yeah. Where he couldn't eat anything except milk and milk was very expensive. All of his parents and aunts and he said older sisters, but he doesn't have any older sisters. He has sisters but they're both younger than him. So I don't know, maybe he meant cousins, whatever. But they all, you ","P1-N400A71":"know, they yelled at him and told him he was being selfish and greedy and stealing food from the family. It's like, he was four. (Pause) Yeah. (Pause)
+THERAPIST: Yes.
+CLIENT: Especially if you are living in a culture where your religion is a minority religion.
+THERAPIST: What, what was his religion?
+CLIENT: Muslim.
+THERAPIST: Muslim.
+CLIENT: We never went to mosque. Because my mom thought the Asian women were all stuck up and snobbish and so she would refuse to go. And dad didn't take us to mosque with him because taking care of the children was the woman's work. You don't have children on the men's side of the mosque because the ","P1-N400B91":"women are supposed to take care of them.
+THERAPIST: I see.
+CLIENT: (Pause) So. They were too cheap to pay for the Muslim equivalent of Sunday School. (Pause) And then they put me in Catholic school. I mean, what the hell did they think was going to happen with that?
+THERAPIST: And even if there were ways that they are, he in particular, legitimately didn't know some things. I mean some things are sort of hard to believe that he didn't know. It just sounds kind of (inaudible) something else. But I can imagine there were things he just didn't know. Or maybe more ","P1-N400C11":"like he didn't have models for. And for that and other reasons, like a lot of, I can imagine might have been very difficult for him. More confusing.
+CLIENT: Okay, see you Monday.
+THERAPIST: On Monday.
