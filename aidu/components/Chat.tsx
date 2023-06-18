@@ -4,7 +4,7 @@
 import { PineconeClient } from "@pinecone-database/pinecone";
 
 
-
+import axios from "axios";
 import { useState, useRef, useEffect, useReducer } from 'react'
 
 import { PaperAirplaneIcon, MicrophoneIcon } from '@heroicons/react/24/solid'
@@ -169,25 +169,19 @@ const Chat = () => {
         console.log(state);
         console.log(state.messages.at(-2))
         const userMessage = state.messages.at(-2)
-        const getVector = async () => {
-            const vector = await createEmbeddings({
-                token: process.env.NEXT_PUBLIC_PINECONE_API_KEY,
-                model: 'text-embedding-ada-002',
-                input: userMessage?.content,
-            });
-            console.log(vector)
-            const index = pinecone.Index("chat-history");
-            const queryRequest = {
-                vector: vector[0].embedding,
-                topK: 10,
-                includeValues: false,
-                includeMetadata: true,
-            };
-            const queryResponse = await index.query({ queryRequest });
-            console.log(queryResponse)
-            return queryResponse
-        }
-        getVector()
+        const postData = async () => {
+            try {
+                const response = await axios.post('http://localhost:8000/get_similar_texts', {
+                    text: userMessage.content,
+                    k: 10
+                });
+                console.log(response.data);
+            } catch (error) {
+                console.error(error);
+            }
+        };
+
+        postData();
 
         const apiCall = async () => {
             try {
