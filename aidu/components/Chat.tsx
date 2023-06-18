@@ -182,7 +182,7 @@ const Chat = () => {
         };
 
         postData();
-
+        const prompt = `Answer the question based on the context and chat history below, and if the question can't be answered based on the context, say "I don't know" \n\nContext: {from embeddings}\n\n---\n\nHistory:${state.messages}\nAnswer:`
         const apiCall = async () => {
             try {
                 const completion = await openai.createChatCompletion({
