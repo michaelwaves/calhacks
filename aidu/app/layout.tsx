@@ -3,6 +3,8 @@ import './globals.css'
 import { Raleway, Inter, League_Spartan } from 'next/font/google'
 import Footer from '@/components/Footer'
 
+import {Toaster} from 'react-hot-toast'
+
 const raleway = Raleway({ subsets: ['latin'] })
 const leagueSpartan = League_Spartan({ subsets: ['latin'] })
 
@@ -19,13 +21,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <header>
+      {/* <header>
       <Header />
-      </header>
+      </header> */}
+      <Toaster/>
       <div className={leagueSpartan.className}>{children}</div>
-      <footer>
+      {/* <footer>
       <Footer />
-      </footer>
+      </footer> */}
       </body>
     </html>
 
