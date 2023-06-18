@@ -1,7 +1,9 @@
 
+'use client'
 import React, { useEffect, useRef, useState } from 'react';
 import ReChart from './ReChart';
 import { rechartdata } from '@/schema/rechartdata';
+import { toast } from 'react-hot-toast';
 
 const WebcamStream: React.FC = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
@@ -34,6 +36,19 @@ const WebcamStream: React.FC = () => {
 
             recorder.start();
             setMediaRecorder(recorder);
+
+            
+            toast.custom((t) => (
+                <div
+                className={`${
+                    t.visible ? 'animate-enter' : 'animate-leave'
+                } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
+                >
+                <div className='bg-red-800 h-2 w-2 rounded-full mr-2' />  
+                <p className='text-center text-gray-300 p-1 text-sm'>Video recording in progress</p>
+                </div>
+            ))
+
         } catch (error) {
             console.error('Error accessing webcam:', error);
         }
@@ -42,6 +57,17 @@ const WebcamStream: React.FC = () => {
     const stopRecording = () => {
         if (mediaRecorder) {
             mediaRecorder.stop();
+                        
+            toast.custom((t) => (
+                <div
+                className={`${
+                    t.visible ? 'animate-enter' : 'animate-leave'
+                } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
+                >
+                <div className='bg-black h-2 w-2 rounded-full mr-2' />  
+                <p className='text-center text-gray-300 p-1 text-sm'>Video recording ended</p>
+                </div>
+            ))
         }
     };
 
@@ -144,14 +170,19 @@ const WebcamStream: React.FC = () => {
     }, []);
 
     return (
-        <div>
-            <div>{time}</div>
-            <video ref={videoRef} autoPlay playsInline />
-            <canvas ref={canvasRef} />
-            <button className="submit-button" onClick={startRecording}>Start Recording</button>
-            <button className="submit-button" onClick={stopRecording}>Stop Recording</button>
-            <button className="submit-button" onClick={saveVideo}>Save Video</button>
-            <ReChart data={rechartdata} />
+        <div className='className="w-full max-w-xl rounded-lg flex flex-col items-center justify-center'>
+ 
+            <video ref={videoRef} muted autoPlay playsInline className='w-full max-w-sm rounded-lg bg-black' />
+            {/* <canvas ref={canvasRef} /> */}
+
+            <div className='flex items-center gap-5 mt-2'>
+                <div className='text-xs bg-gray-700 text-white bg-opacity-60'>Session: {time}</div>
+                <button className="text-xs text-white bg-gray-800 p-2 shadow-lg  rounded-lg hover:bg-gray-700 opacity-75" onClick={startRecording}>Start Recording</button>
+                <button className="text-xs text-white bg-gray-800 p-2 shadow-lg  rounded-lg hover:bg-gray-700 opacity-75" onClick={stopRecording}>Stop Recording</button>
+                <button className="text-xs text-white bg-gray-800 p-2 shadow-lg  rounded-lg hover:bg-gray-700 opacity-75" onClick={saveVideo}>Save Video</button>
+            </div>
+          
+            {/* <ReChart data={rechartdata} /> */}
         </div>
     );
 };

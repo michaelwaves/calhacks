@@ -3,6 +3,10 @@
 import { motion } from 'framer-motion'
 import WebcamStream from '@/components/WebcamStream'
 
+const metadata = {
+    title: "AIDU"
+}
+
 const carouselVariants = {
     initial: {
         opacity: 1,

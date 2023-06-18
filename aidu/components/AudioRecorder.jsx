@@ -12,7 +12,7 @@ import {Configuration, OpenAIApi } from 'openai'
 
 import {convertToMP3} from '@/utils/audioConvertor'
 
-const AudioRecorder = () => {
+const AudioRecorder = ({dispatch}) => {
 
     const [loading, setLoading] = useState(false)
 	const [permission, setPermission] = useState(false);
@@ -93,7 +93,7 @@ const AudioRecorder = () => {
               } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
             >
             <div className='bg-red-800 h-2 w-2 rounded-full mr-2' />  
-              <p className='text-center text-gray-300 p-1 text-sm'>Recording in progress</p>
+              <p className='text-center text-gray-300 p-1 text-sm'>Audio recording in progress</p>
             </div>
         ))
 
@@ -115,36 +115,35 @@ const AudioRecorder = () => {
 
 		mediaRecorder.current.onstop = async () => {
 			const audioBlob = new Blob(audioChunks, { type: mimeType });
-
-            var reader = new FileReader();
-            reader.readAsDataURL(audioBlob)
+        
+            const myFile = new File([audioBlob], 'audio.mp3', {
+                type: audioBlob.type,
+            });
 
             let audioUrl = URL.createObjectURL(audioBlob);
             setLoading(true)
 
             let formData = new FormData();
-            formData.append('file', audioBlob);  
+            formData.append('file', myFile);  
             formData.append("model", "whisper-1")
-
-            console.log(formData)
 
             fetch('https://api.openai.com/v1/audio/transcriptions', {
                 method: 'POST',
                 body: formData,
                 headers: {
                     'Authorization': `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`,
-                    // "Content-Type": 'application/json'
                 },
               
             }).then((res) => {
-                console.log(res)
                 return res.json()
             }).then((data) => {
-                console.log(data)
+                dispatch({ type: "SET_INPUT", payload: data.text})
+                setLoading(false)
                 return data
             })
             .catch((e) => {
                 console.log(e)
+                setLoading(false)
             })
 
 

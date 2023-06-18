@@ -1,4 +1,7 @@
+
+'use client'
 import React, { useRef, useState } from 'react';
+import { toast } from 'react-hot-toast';
 
 const WebcamRecorder: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -19,6 +22,7 @@ const WebcamRecorder: React.FC = () => {
 
       recorder.start();
       setMediaRecorder(recorder);
+
     } catch (error) {
       console.error('Error accessing webcam:', error);
     }

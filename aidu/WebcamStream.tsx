@@ -1,3 +1,6 @@
+
+'use client'
+
 import React, { useEffect, useRef } from 'react';
 
 const WebcamStream: React.FC = () => {
@@ -76,8 +79,8 @@ const WebcamStream: React.FC = () => {
 
     return (
         <div>
-            <video ref={videoRef} autoPlay playsInline />
-            <canvas ref={canvasRef} />
+            <video ref={videoRef} autoPlay playsInline className='' />
+            {/* <canvas ref={canvasRef} /> */}
         </div>
     );
 };
