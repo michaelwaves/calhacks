@@ -19,15 +19,14 @@ const metadata = {
     title: "AIDU"
 }
 
-export default function App () {
+export default function App() {
 
     useEffect(() => {
 
         toast.custom((t) => (
             <div
-              className={`${
-                t.visible ? 'animate-enter' : 'animate-leave'
-              } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
+                className={`${t.visible ? 'animate-enter' : 'animate-leave'
+                    } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
             >
                 <p className='text-center text-gray-300 p-1 text-md'>Welcome Dear User!</p>
             </div>
@@ -35,9 +34,8 @@ export default function App () {
 
         toast.custom((t) => (
             <div
-              className={`${
-                t.visible ? 'animate-enter' : 'animate-leave'
-              } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
+                className={`${t.visible ? 'animate-enter' : 'animate-leave'
+                    } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
             >
                 <p className='text-center text-gray-300 p-1 text-md'>Please press START RECORDING to get started</p>
             </div>
@@ -47,30 +45,30 @@ export default function App () {
 
     return (
         <>
-        
-        <Header/>
-        
-        <main>
-            <div className="relative isolate bg-gray-800 pb-16 pt-14 sm:pb-20 min-h-screen">
-                <img
-                    src={cloudsBig}
-                    alt="Clouds"
-                    className="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-overlay"
-                />
 
-                <div className="flex flex-col sm:flex-row items-center gap-10 justify-center space-x-2">
-                    <WebcamStream/>
-                    
-                    <Dalle/>
+            <Header />
+
+            <main>
+                <div className="relative isolate bg-gray-800 pb-16 pt-14 sm:pb-20 min-h-screen">
+                    <img
+                        src={cloudsBig}
+                        alt="Clouds"
+                        className="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-overlay"
+                    />
+
+                    <div className="flex flex-col sm:flex-row items-center gap-10 justify-center space-x-2">
+                        {/*                     <WebcamStream/> */}
+
+                        <Dalle />
+                    </div>
+
+                    <div className="mx-auto max-w-7xl text-center mt-10">
+                        <Chat />
+                    </div>
                 </div>
+            </main>
 
-                <div className="mx-auto max-w-7xl text-center mt-10">
-                    <Chat/>
-                </div>
-            </div>
-        </main>
 
-        
         </>
     )
 }

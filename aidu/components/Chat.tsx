@@ -21,7 +21,7 @@ import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
 import { get } from 'http';
 
 const configuration = new Configuration({
-    apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+    apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 const pinecone = new PineconeClient();
@@ -154,6 +154,7 @@ const Chat = () => {
     });
  */
     const [state, dispatch] = useReducer(reducer, initialState);
+    const [context, setContext] = useState();
 
     const bottomEl = useRef(null)
 
@@ -169,26 +170,31 @@ const Chat = () => {
         console.log(state);
         console.log(state.messages.at(-2))
         const userMessage = state.messages.at(-2)
+        console.log(userMessage?.content)
         const postData = async () => {
             try {
-                const response = await axios.post('http://localhost:8000/get_similar_texts', {
-                    text: userMessage.content,
-                    k: 10
-                });
+                const response = await axios.post(`http://localhost:8000/get_similar_texts?text=${encodeURIComponent(userMessage?.content)}&k=${10}`);
                 console.log(response.data);
+                const therapistLines = response.data
+                    .map(item => item.text)
+                    .join(' ');
+                //console.log(therapistLines)
+                return therapistLines;
             } catch (error) {
                 console.error(error);
             }
         };
 
-        postData();
-        const prompt = `Answer the question based on the context and chat history below, and if the question can't be answered based on the context, say "I don't know" \n\nContext: {from embeddings}\n\n---\n\nHistory:${state.messages}\nAnswer:`
-        const apiCall = async () => {
+
+        const apiCall = async (context: string) => {
+            const prompt = `You, the assistant, are a therapist and the user is the client . Continue the conversation based on the context of similar therapy sessions and chat history below\n\nContext: ${context}`
+            const p = [{ "role": "system", "content": prompt }, ...state.messages]
             try {
                 const completion = await openai.createChatCompletion({
                     model: "gpt-3.5-turbo",
-                    messages: state.messages,
+                    messages: p,
                     max_tokens: 400,
+                    temperature: 0,
                 })
                 dispatch({ type: "SET_OUTPUT", payload: completion.data.choices[0].message?.content });
                 dispatch({ type: "ADD_MESSAGE", payload: { role: "assistant", content: completion.data.choices[0].message?.content } });
@@ -200,7 +206,9 @@ const Chat = () => {
         }
         if (state.messages.length > 0) {
             if (state.messages.at(-1).role === "user" && state.messages.at(-1).content !== "") {
-                apiCall();
+                postData().then((context) => {
+                    apiCall(context);
+                });
             }
         }
 

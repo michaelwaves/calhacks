@@ -20,15 +20,15 @@ const WebcamStream: React.FC = () => {
     let [emotions, setEmotions] = useState(
         [
             {
-                emotion: "Joy", 
+                emotion: "Joy",
                 amount: 0.0003
             },
             {
-                emotion: "Calmness", 
+                emotion: "Calmness",
                 amount: 0.0002
             },
             {
-                emotion: "Interest", 
+                emotion: "Interest",
                 amount: 0.0001
             }
         ])
@@ -53,15 +53,14 @@ const WebcamStream: React.FC = () => {
             recorder.start();
             setMediaRecorder(recorder);
 
-            
+
             toast.custom((t) => (
                 <div
-                className={`${
-                    t.visible ? 'animate-enter' : 'animate-leave'
-                } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
+                    className={`${t.visible ? 'animate-enter' : 'animate-leave'
+                        } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
                 >
-                <div className='bg-red-800 h-2 w-2 rounded-full mr-2' />  
-                <p className='text-center text-gray-300 p-1 text-sm'>Video recording in progress</p>
+                    <div className='bg-red-800 h-2 w-2 rounded-full mr-2' />
+                    <p className='text-center text-gray-300 p-1 text-sm'>Video recording in progress</p>
                 </div>
             ))
 
@@ -73,15 +72,14 @@ const WebcamStream: React.FC = () => {
     const stopRecording = () => {
         if (mediaRecorder) {
             mediaRecorder.stop();
-                        
+
             toast.custom((t) => (
                 <div
-                className={`${
-                    t.visible ? 'animate-enter' : 'animate-leave'
-                } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
+                    className={`${t.visible ? 'animate-enter' : 'animate-leave'
+                        } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
                 >
-                <div className='bg-black h-2 w-2 rounded-full mr-2' />  
-                <p className='text-center text-gray-300 p-1 text-sm'>Video recording ended</p>
+                    <div className='bg-black h-2 w-2 rounded-full mr-2' />
+                    <p className='text-center text-gray-300 p-1 text-sm'>Video recording ended</p>
                 </div>
             ))
         }
@@ -105,48 +103,48 @@ const WebcamStream: React.FC = () => {
 
         let objects = [
             {
-                emotion: "one", 
+                emotion: "one",
                 amount: 0.0003
             },
             {
-                emotion: "two", 
+                emotion: "two",
                 amount: 0.0002
             },
             {
-                emotion: "three", 
+                emotion: "three",
                 amount: 0.0001
             }
         ]
 
         for (const [key, value] of Object.entries(emotionsObject)) {
 
-            if (key !== 'name'){
-         
+            if (key !== 'name') {
+
                 let num = parseFloat(value)
 
-                if (num > objects[0].amount){
+                if (num > objects[0].amount) {
 
                     objects[0] = {
-                        emotion: key, 
+                        emotion: key,
                         amount: num
                     }
                     continue;
                 }
 
-                if (num > objects[1].amount){
+                if (num > objects[1].amount) {
 
                     objects[1] = {
-                        emotion: key, 
+                        emotion: key,
                         amount: num
                     }
 
                     continue;
                 }
 
-                if (num > objects[2].amount){
+                if (num > objects[2].amount) {
 
                     objects[2] = {
-                        emotion: key, 
+                        emotion: key,
                         amount: num
                     }
 
@@ -154,7 +152,7 @@ const WebcamStream: React.FC = () => {
                 }
 
             }
-       
+
         }
 
 
@@ -206,8 +204,8 @@ const WebcamStream: React.FC = () => {
                     socket.send(payloadString);
                     socket.onmessage = (event) => {
                         const socketdata = JSON.parse(event.data);
-                        
-                        if (socketdata?.face?.predictions === undefined){
+
+                        if (socketdata?.face?.predictions === undefined) {
                             return;
                         }
                         const d = socketdata?.face?.predictions[0]?.emotions
@@ -258,11 +256,11 @@ const WebcamStream: React.FC = () => {
 
     return (
         <div className='className="w-full max-w-xl rounded-lg flex flex-col items-center justify-center '>
- 
+
             <video ref={videoRef} muted autoPlay playsInline className='w-full max-w-xs rounded-lg bg-black z-10 relative'>
                 <canvas ref={canvasRef} className='w-1/5 max-w-xs rounded-lg bg-black absolute z-20 right-0 bottom-0' />
             </video>
-            
+
 
             <div className='flex items-center gap-5 mt-2'>
                 <div className='text-xs bg-gray-700 text-white bg-opacity-60'>Session: {time}</div>
@@ -284,7 +282,7 @@ const WebcamStream: React.FC = () => {
 
                 </div>
             </div>
-          
+
             {/* <ReChart data={rechartdata} /> */}
         </div>
     );
