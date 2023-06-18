@@ -13,7 +13,7 @@ const WebcamStream: React.FC = () => {
     const [seconds, setSeconds] = useState<number>(0)
     //const [emotions, setEmotions] = useState<any>()
     //const socket = new WebSocket('ws://localhost:8765');
-    const apiKey = "3mz6tw5RyAwKATiHJDZlQQg9zT6jVv87vjdnNSUs257owiGY"
+    const apiKey = process.env.NEXT_PUBLIC_HUME_API_KEY
     const socket = new WebSocket(`wss://api.hume.ai/v0/stream/models?apiKey=${encodeURIComponent(apiKey)}`);
     //const socket = new WebSocket("ws://localhost:8765/")//for debug
 

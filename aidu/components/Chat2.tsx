@@ -1,37 +1,26 @@
 
 'use client'
 
-import { PineconeClient } from "@pinecone-database/pinecone";
 
 
+import {useState, useRef, useEffect, useReducer} from 'react'
 
-import { useState, useRef, useEffect, useReducer } from 'react'
+import {PaperAirplaneIcon, MicrophoneIcon} from '@heroicons/react/24/solid'
 
-import { PaperAirplaneIcon, MicrophoneIcon } from '@heroicons/react/24/solid'
-
-import { toast } from 'react-hot-toast'
+import {toast} from 'react-hot-toast'
 
 //import RecordRTC, { invokeSaveAsDialog } from 'recordrtc';
 
-import { CircularProgress } from '@mui/material'
+import {CircularProgress} from '@mui/material'
 
 import AudioRecorder from './AudioRecorder'
 
 import { Configuration, OpenAIApi, ChatCompletionRequestMessage } from "openai";
-import { get } from 'http';
 
 const configuration = new Configuration({
     apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
-const pinecone = new PineconeClient();
-pinecone.init({
-    environment: "us-west4-gcp-free",
-    apiKey: "4a49489b-e4a9-4b70-a2c4-d326df8ebbea",
-});
-
-// Specify the type of your metadata
-type Metadata = { text: string };
 
 
 type State = {
@@ -114,52 +103,15 @@ const reducer = (state: State, action: Action) => {
     }
 }
 
-const Chat = () => {
-    // Instantiate a client
-    const createEmbeddings = async ({ token, model, input }: { token: string, model: string, input: string }) => {
-        const response = await fetch('https://api.openai.com/v1/embeddings', {
-            headers: {
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`,
-            },
-            method: 'POST',
-            body: JSON.stringify({ input, model }),
-        });
+const Chat2 = () => {
 
-        const { error, data, usage } = await response.json();
-
-        return data;
-    };
-    /* const query = async ({ token, vector, namespace }) => {
-        const response = await fetch('https://chathistory-0aa6622.svc.us-west4-gcp-free.pinecone.io', {
-            headers: {
-                'Content-Type': 'application/json',
-                'Api-Key': token,
-            },
-            method: 'POST',
-            body: JSON.stringify({
-                vector,
-                namespace,
-                topK: 5,
-                includeMetadata: true,
-            }),
-        });
-
-        const data = await response.json();
-        return data.matches.map(match => match.metadata);
-    };
-    const pinecone = new PineconeClient<Metadata>({
-        apiKey: "4a49489b-e4a9-4b70-a2c4-d326df8ebbea",
-        baseUrl: 'https://chathistory-0aa6622.svc.us-west4-gcp-free.pinecone.io'
-    });
- */
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const bottomEl = useRef(null)
 
     const scrollToBottom = () => {
 
-        if (bottomEl?.current) {
+        if (bottomEl?.current){
             bottomEl?.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
         }
 
@@ -167,28 +119,6 @@ const Chat = () => {
 
     useEffect(() => {
         console.log(state);
-        console.log(state.messages.at(-2))
-        const userMessage = state.messages.at(-2)
-        const getVector = async () => {
-            const vector = await createEmbeddings({
-                token: process.env.NEXT_PUBLIC_PINECONE_API_KEY,
-                model: 'text-embedding-ada-002',
-                input: userMessage?.content,
-            });
-            console.log(vector)
-            const index = pinecone.Index("chat-history");
-            const queryRequest = {
-                vector: vector[0].embedding,
-                topK: 10,
-                includeValues: false,
-                includeMetadata: true,
-            };
-            const queryResponse = await index.query({ queryRequest });
-            console.log(queryResponse)
-            return queryResponse
-        }
-        getVector()
-
         const apiCall = async () => {
             try {
                 const completion = await openai.createChatCompletion({
@@ -210,19 +140,19 @@ const Chat = () => {
             }
         }
 
-
+                        
         scrollToBottom()
     }, [state.messages]);
 
 
-
-    const handleSubmitInput = async (e: any) => {
+    
+    const handleSubmitInput = async (e) => {
 
         e.preventDefault()
         console.log("handleSubmitInput");
         console.log(state.messages);
 
-        if (state.input !== '') {
+        if (state.input !== ''){
             dispatch({ type: "SET_LOADING", payload: true });
             dispatch({ type: "ADD_MESSAGE", payload: { role: "user", content: state.input } });
             dispatch({ type: "SET_INPUT", payload: '' })
@@ -246,7 +176,7 @@ const Chat = () => {
                                                 <p className="text-sm text-gray-300 text-left">{message.content}</p>
                                             </div>
                                         </div>
-                                    ) : (
+                                    ): (
                                         <div className="flex w-11/12 mt-2 space-x-3 max-w-3xl ml-auto justify-end">
                                             <div className="bg-blue-600 bg-opacity-60 text-white p-3 rounded-l-lg rounded-br-lg">
                                                 <p className="text-sm text-left">{message.content}</p>
@@ -255,48 +185,48 @@ const Chat = () => {
                                     )
                                 }
 
-
+                     
                             </div>
                         ))
                     }
-                    <div ref={bottomEl} className='h-1'></div>
+                    <div ref={bottomEl} className='h-1'></div>              
                 </div>
-                <div className="bg-gray-600 p-2 flex items-center rounded-xl bg-opacity-30">
+            <div className="bg-gray-600 p-2 flex items-center rounded-xl bg-opacity-30">
 
-                    <AudioRecorder dispatch={dispatch} />
+                <AudioRecorder dispatch={dispatch}/>
 
-                    <form className="flex w-full">
-                        <input
-                            value={state.input}
-                            onChange={(e) =>
-                                dispatch({ type: "SET_INPUT", payload: e.target.value })
-                            }
-                            className="text-white flex items-center h-10 w-full rounded px-3 text-sm bg-gray-600"
-                            type="text"
-                            placeholder="Type your message…"
-                        />
-                        <button type="submit" onClick={handleSubmitInput} className="ml-2" disabled={state.loading}>
+                <form className="flex w-full">
+                    <input 
+                        value={state.input}
+                        onChange={(e) =>
+                            dispatch({ type: "SET_INPUT", payload: e.target.value })
+                        }
+                        className="text-white flex items-center h-10 w-full rounded px-3 text-sm bg-gray-600" 
+                        type="text" 
+                        placeholder="Type your message…"
+                    />
+                    <button type="submit" onClick={handleSubmitInput} className="ml-2" disabled={state.loading}>
 
-                            {
-
-                                state.loading ? (
-                                    <CircularProgress size={25} className='object-contain h-6 w-6 text-gray-100 mt-1' />
-                                ) : (
-                                    <PaperAirplaneIcon
-                                        className="object-contain h-6 w-6 text-gray-100"
-                                    />
-                                )
-                            }
-
-                        </button>
-                    </form>
-                </div>
-
+                        {
+                            
+                            state.loading ? (
+                                <CircularProgress size={25} className='object-contain h-6 w-6 text-gray-100 mt-1'/>
+                            ): (
+                                <PaperAirplaneIcon
+                                    className="object-contain h-6 w-6 text-gray-100"
+                                />
+                            )
+                        }
+                     
+                    </button>
+                </form>
+            </div>
+            
             </div>
 
         </section>
-
+                        
     )
 }
 
-export default Chat
+export default Chat2
