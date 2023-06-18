@@ -146,12 +146,18 @@ const Chat = () => {
 
 
     
-    const handleSubmitInput = async () => {
+    const handleSubmitInput = async (e) => {
+
+        e.preventDefault()
         console.log("handleSubmitInput");
         console.log(state.messages);
-        dispatch({ type: "SET_LOADING", payload: true });
-        dispatch({ type: "ADD_MESSAGE", payload: { role: "user", content: state.input } });
-        dispatch({ type: "SET_INPUT", payload: '' })
+
+        if (state.input !== ''){
+            dispatch({ type: "SET_LOADING", payload: true });
+            dispatch({ type: "ADD_MESSAGE", payload: { role: "user", content: state.input } });
+            dispatch({ type: "SET_INPUT", payload: '' })
+        }
+
     }
 
     return (

@@ -60,6 +60,8 @@ const WebcamStream: React.FC = () => {
                     "job_details": false,
                     "payload_id": "fcgdaeb"
                 }
+
+                console.log('iiiiiiiiiiiiiiiiiiiiiiiiiiiii')
                 const payloadString = JSON.stringify(payload);
                 if (socket.readyState === WebSocket.OPEN) {
                     socket.send(payloadString);
@@ -80,7 +82,7 @@ const WebcamStream: React.FC = () => {
     return (
         <div>
             <video ref={videoRef} autoPlay playsInline className='' />
-            {/* <canvas ref={canvasRef} /> */}
+            <canvas ref={canvasRef} />
         </div>
     );
 };

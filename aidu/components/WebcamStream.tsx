@@ -11,11 +11,27 @@ const WebcamStream: React.FC = () => {
     const [mediaRecorder, setMediaRecorder] = useState<MediaRecorder | null>(null);
     const [recordedChunks, setRecordedChunks] = useState<Blob[]>([]);
     const [seconds, setSeconds] = useState<number>(0)
-    const [emotions, setEmotions] = useState<any>()
+    //const [emotions, setEmotions] = useState<any>()
     //const socket = new WebSocket('ws://localhost:8765');
     const apiKey = "3mz6tw5RyAwKATiHJDZlQQg9zT6jVv87vjdnNSUs257owiGY"
     const socket = new WebSocket(`wss://api.hume.ai/v0/stream/models?apiKey=${encodeURIComponent(apiKey)}`);
     //const socket = new WebSocket("ws://localhost:8765/")//for debug
+
+    let [emotions, setEmotions] = useState(
+        [
+            {
+                emotion: "Joy", 
+                amount: 0.0003
+            },
+            {
+                emotion: "Calmness", 
+                amount: 0.0002
+            },
+            {
+                emotion: "Interest", 
+                amount: 0.0001
+            }
+        ])
 
     socket.onopen = () => {
         console.log('WebSocket connection established.');
@@ -84,6 +100,70 @@ const WebcamStream: React.FC = () => {
         setRecordedChunks([]);
     };
 
+
+    const returnTop3Emotions = (emotionsObject) => {
+
+        let objects = [
+            {
+                emotion: "one", 
+                amount: 0.0003
+            },
+            {
+                emotion: "two", 
+                amount: 0.0002
+            },
+            {
+                emotion: "three", 
+                amount: 0.0001
+            }
+        ]
+
+        for (const [key, value] of Object.entries(emotionsObject)) {
+
+            if (key !== 'name'){
+         
+                let num = parseFloat(value)
+
+                if (num > objects[0].amount){
+
+                    objects[0] = {
+                        emotion: key, 
+                        amount: num
+                    }
+                    continue;
+                }
+
+                if (num > objects[1].amount){
+
+                    objects[1] = {
+                        emotion: key, 
+                        amount: num
+                    }
+
+                    continue;
+                }
+
+                if (num > objects[2].amount){
+
+                    objects[2] = {
+                        emotion: key, 
+                        amount: num
+                    }
+
+                    continue;
+                }
+
+            }
+       
+        }
+
+
+        setEmotions(objects)
+
+        return objects
+
+    }
+
     useEffect(() => {
         const canvas = canvasRef.current;
         const context = canvas?.getContext('2d');
@@ -126,7 +206,12 @@ const WebcamStream: React.FC = () => {
                     socket.send(payloadString);
                     socket.onmessage = (event) => {
                         const socketdata = JSON.parse(event.data);
-                        const d = socketdata.face.predictions[0].emotions
+                        
+                        if (socketdata?.face?.predictions === undefined){
+                            return;
+                        }
+                        const d = socketdata?.face?.predictions[0]?.emotions
+
                         const emotionsObject = d.reduce((obj: any, { name, score }: { name: string, score: number }) => {
                             obj[name] = score.toFixed(3);
                             return obj;
@@ -134,6 +219,8 @@ const WebcamStream: React.FC = () => {
 
                         emotionsObject['name'] = seconds
                         console.log(emotionsObject)
+
+                        returnTop3Emotions(emotionsObject)
 
                         //debug
                         /* socket.send("hi")
@@ -170,16 +257,32 @@ const WebcamStream: React.FC = () => {
     }, []);
 
     return (
-        <div className='className="w-full max-w-xl rounded-lg flex flex-col items-center justify-center'>
+        <div className='className="w-full max-w-xl rounded-lg flex flex-col items-center justify-center '>
  
-            <video ref={videoRef} muted autoPlay playsInline className='w-full max-w-sm rounded-lg bg-black' />
-            {/* <canvas ref={canvasRef} /> */}
+            <video ref={videoRef} muted autoPlay playsInline className='w-full max-w-xs rounded-lg bg-black z-10 relative'>
+            <canvas ref={canvasRef} className='w-1/5 max-w-xs rounded-lg bg-black absolute z-20 right-0 bottom-0' />
+            </video>
+            
 
             <div className='flex items-center gap-5 mt-2'>
                 <div className='text-xs bg-gray-700 text-white bg-opacity-60'>Session: {time}</div>
                 <button className="text-xs text-white bg-gray-800 p-2 shadow-lg  rounded-lg hover:bg-gray-700 opacity-75" onClick={startRecording}>Start Recording</button>
                 <button className="text-xs text-white bg-gray-800 p-2 shadow-lg  rounded-lg hover:bg-gray-700 opacity-75" onClick={stopRecording}>Stop Recording</button>
                 <button className="text-xs text-white bg-gray-800 p-2 shadow-lg  rounded-lg hover:bg-gray-700 opacity-75" onClick={saveVideo}>Save Video</button>
+            </div>
+
+            <div className='mt-3'>
+                <div className='flex gap-2 justify-center items-center max-w-md'>
+                    <p className='text-center text-white text-xs '>Top Current Emotions: </p>
+                    {
+                        emotions.map((el, i) => (
+                            <div key={`element-${i}`} className='p-1 bg-slate-400 bg-opacity-60 rounded-md'>
+                                <p className='text-xs text-white'>{el.emotion}: <span>{Math.floor(el.amount * 100)}%</span></p>
+                            </div>
+                        ))
+                    }
+
+                </div>
             </div>
           
             {/* <ReChart data={rechartdata} /> */}

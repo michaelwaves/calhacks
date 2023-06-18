@@ -2,12 +2,15 @@
 'use client'
 
 import WebcamStream from "@/components/WebcamStream"
+
+//import WebcamStream from "@/WebcamStream"
 import Chat from "@/components/Chat"
 import Header from "@/components/Header2"
 import VideoDisplay from "@/components/VideoDisplay"
 import Dalle from "@/components/Dalle"
 import { useEffect } from "react"
 import { toast } from "react-hot-toast"
+//import WebcamRecorder from "@/components/WebCamRecorder"
 
 let cloudsBig = '/assets/images/clouds-big.jpg'
 
@@ -30,6 +33,16 @@ export default function App () {
             </div>
         ))
 
+        toast.custom((t) => (
+            <div
+              className={`${
+                t.visible ? 'animate-enter' : 'animate-leave'
+              } max-w-xs px-5 bg-gray-800 opacity-70 shadow-lg rounded-lg pointer-events-auto flex items-center justify-center `}
+            >
+                <p className='text-center text-gray-300 p-1 text-md'>Please press START RECORDING to get started</p>
+            </div>
+        ))
+
     }, [])
 
     return (
@@ -47,6 +60,7 @@ export default function App () {
 
                 <div className="flex flex-col sm:flex-row items-center gap-10 justify-center space-x-2">
                     <WebcamStream/>
+                    
                     <Dalle/>
                 </div>
 
