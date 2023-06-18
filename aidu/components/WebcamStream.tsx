@@ -260,7 +260,7 @@ const WebcamStream: React.FC = () => {
         <div className='className="w-full max-w-xl rounded-lg flex flex-col items-center justify-center '>
  
             <video ref={videoRef} muted autoPlay playsInline className='w-full max-w-xs rounded-lg bg-black z-10 relative'>
-            <canvas ref={canvasRef} className='w-1/5 max-w-xs rounded-lg bg-black absolute z-20 right-0 bottom-0' />
+                <canvas ref={canvasRef} className='w-1/5 max-w-xs rounded-lg bg-black absolute z-20 right-0 bottom-0' />
             </video>
             
 
@@ -272,7 +272,7 @@ const WebcamStream: React.FC = () => {
             </div>
 
             <div className='mt-3'>
-                <div className='flex gap-2 justify-center items-center max-w-md'>
+                <div className='flex gap-2 justify-center items-center max-w-lg'>
                     <p className='text-center text-white text-xs '>Top Current Emotions: </p>
                     {
                         emotions.map((el, i) => (

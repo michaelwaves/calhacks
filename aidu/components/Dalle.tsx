@@ -13,11 +13,11 @@ const Dalle = () => {
     let generateImage = async () => {
         const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
-        setTimeout(() => {
-            return;
-        }, 5000)
+        // setTimeout(() => {
+        //     return;
+        // }, 5000)
 
-        return;
+        // return;
         const response = await fetch('https://api.openai.com/v1/images/generations', {
           method: 'POST',
           headers: {
@@ -51,7 +51,7 @@ const Dalle = () => {
     
     return (
         
-        <>
+        <div className="flex flex-col items-center justify-center">
      
         {
             image === '' ? (
@@ -66,8 +66,9 @@ const Dalle = () => {
             )
         }
        
+            <p className="text-center text-xs text-white mt-3">Feel free to interact with AIDU</p>
 
-        </>
+        </div>
   
     )
 }
